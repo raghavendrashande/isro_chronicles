@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:ellipsis_overflow_text/ellipsis_overflow_text.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:url_launcher/url_launcher.dart';
@@ -55,28 +56,43 @@ class satsdata extends StatelessWidget {
                                }
                             }, 
                     child: Card(
-                        color: Color.fromARGB(61, 112, 47, 123),
-                        shadowColor: const Color.fromARGB(156, 189, 189, 189),
-                        elevation: 5,
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-                        child: Column(
-                          children: [
-                            Text(allsats[index].name,
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18,
-                              color: Colors.white
-                              ),
-                            ),
-                            Text('Launch date: '+allsats[index].launchdate,style: TextStyle(color: Colors.white),overflow: TextOverflow.fade,),
-                            Text('Launch type '+allsats[index].launchtype,style: TextStyle(color: Colors.white),overflow: TextOverflow.fade),
-                            Text('Payload: '+allsats[index].payload,style: TextStyle(color: Colors.white),overflow: TextOverflow.fade),
-                            Text('Result: '+allsats[index].missionstatus,style: TextStyle(color: Colors.white),overflow: TextOverflow.fade),
-                            
-                          ],
+                      margin: EdgeInsets.all(5),
+                          color: Color.fromARGB(61, 112, 47, 123),
+                          shadowColor: const Color.fromARGB(156, 189, 189, 189),
+                          elevation: 5,
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                          child: Row(
+                            children: [
+                              Image.asset('images/satellite.png',height: 50,),
+                              Column(
+                                children: [
+                                      SizedBox(
+                                        width: 240,
+                                        child: Center(
+                                          child: Text(
+                                          allsats[index].name,
+                                          maxLines: 1,
+                                          overflow: TextOverflow.fade,
+                                          softWrap: false,
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 18,
+                                              color: Colors.white
+                                              ),
+                                            ),
+                                        ),
+                                      ),
+
+                                  Text('Launch date: '+allsats[index].launchdate,style: TextStyle(color: Colors.white),overflow: TextOverflow.fade),
+                                  Text('Launch type '+allsats[index].launchtype,style: TextStyle(color: Colors.white),overflow: TextOverflow.fade),
+                                  Text('Payload: '+allsats[index].payload,style: TextStyle(color: Colors.white),overflow: TextOverflow.fade),
+                                  Text('Result: '+allsats[index].missionstatus,style: TextStyle(color: Colors.white),overflow: TextOverflow.fade),
+                                    ],
+                                  ),  
+                                ],
+                          ),
                         ),
-                      ),
-                  ),
+                  ) 
                 );
               },
             );

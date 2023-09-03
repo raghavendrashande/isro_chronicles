@@ -15,6 +15,7 @@ dependencies:
   http: ^1.1.0
   url_launcher: ^6.1.14
   flutter_staggered_grid_view: ^0.7.0
+  ellipsis_overflow_text: ^1.0.1+1
 
 dev_dependencies:
   flutter_test:
@@ -33,3 +34,12 @@ flutter:
     - images/launch vehicles/pslv.jpg
     - images/launch vehicles/slv3.jpg
     - images/launch vehicles/sslv.jpg
+    - images/up/gy.png
+    - images/up/gy2.jpg
+    - images/up/mom.jpg
+    - images/up/nisar.jpg
+    - images/up/sy.jpg
+    - images/up/xp.jpg
+    - images/satellite.png
+
+    

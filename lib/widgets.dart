@@ -1,5 +1,6 @@
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
+import 'package:isro_chronicle/data.dart/updata.dart';
 
 class MyAppBar extends StatelessWidget {
   final String title;
@@ -144,6 +145,58 @@ class lvcard extends StatelessWidget {
                       color: Colors.black,
                       fontSize: 28),),
                 ),
+        ],
+      ),
+      
+    );
+  }
+}
+
+class upcard extends StatelessWidget {
+  final String imagePath;
+  final String name;
+  final int idx;
+  final Color color;
+  const upcard({
+    Key? key,
+    required this.imagePath,
+    required this.name,
+    required this.idx,
+    required this.color
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 10),
+      child: Stack(
+        children: [
+          ClipRRect(
+              borderRadius: BorderRadius.circular(12),
+              child: Hero(
+                tag: upnames[idx],
+                child: Image.asset(
+                  imagePath,
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(name,
+                            style: GoogleFonts.bebasNeue(      
+                              fontWeight: FontWeight.bold,
+                              color: color,
+                              fontSize: 20),),
+                        ],
+                      ),
+                  ),
+                  ),
+                
         ],
       ),
       

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:isro_chronicle/data.dart/lvdata.dart';
 import 'package:isro_chronicle/data.dart/satellitesapicall.dart';
+import 'package:isro_chronicle/data.dart/updata.dart';
 
 class satstab extends StatefulWidget {
   const satstab({super.key});
@@ -32,7 +33,7 @@ class uptab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text('data');
+    return updata();
   }
 }
 
