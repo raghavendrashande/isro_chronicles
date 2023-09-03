@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "869904844487",
+    "project_id": "isrochronicle",
+    "storage_bucket": "isrochronicle.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869904844487:android:bb128ae293d2da650b60e2",
+        "android_client_info": {
+          "package_name": "com.example.isro_chronicle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869904844487-h858o7qblae6onv1m6v135977et219ke.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgXkQB9gqxddsu3HxGqKdeGo6cCmqx6uM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869904844487-h858o7qblae6onv1m6v135977et219ke.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "869904844487-12mtt7i58vhq5ke87ecqnf3d7kudt50a.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.isroChronicle"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
