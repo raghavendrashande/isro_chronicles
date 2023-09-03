@@ -61,17 +61,16 @@ class lvdesc extends StatelessWidget {
                                            }
                                          }, 
                                     child: Text('Click here.',style: TextStyle(color: Colors.blue, fontSize:18)))
-                                ],
-                              ),
-                          ],
-                        ),
-                        
-                      )
-                    ],
-                  ),
-                ),
+                           ],
+                         ),
+                       ],
+                     ),   
+                  )
+                ],
               ),
-      ),
-         );
-       }
+            ),
+         ),
+       ),
+     );
+  }
 }

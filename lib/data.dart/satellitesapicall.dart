@@ -86,15 +86,15 @@ class satsdata extends StatelessWidget {
                                   Text('Launch type '+allsats[index].launchtype,style: TextStyle(color: Colors.white),overflow: TextOverflow.fade),
                                   SizedBox(width:240, child: Center(child: Text('Payload: '+allsats[index].payload,maxLines: 1,softWrap: false,style: TextStyle(color: Colors.white),overflow: TextOverflow.fade))),
                                   Text('Result: '+allsats[index].missionstatus,style: TextStyle(color: Colors.white),overflow: TextOverflow.fade),
-                                    ],
-                                  ),  
-                                ],
-                          ),
-                        ),
-                  ) 
-                );
-              },
-            );
+                          ],
+                        ),  
+                      ],
+                    ),
+                  ),
+                ) 
+              );
+            },
+          );
         }
         else {
           return Scaffold(
@@ -105,14 +105,13 @@ class satsdata extends StatelessWidget {
                 ),                
               ),
               child: LinearProgressIndicator(),
-            ),
-          );
-        }
-      },
-    )
-        ),
-    );
-     
+                ),
+              );
+            }
+          },
+        )
+      ),
+    );   
   }
 }
 

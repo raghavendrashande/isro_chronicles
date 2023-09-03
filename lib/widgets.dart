@@ -47,11 +47,11 @@ class MyTabBar extends StatelessWidget {
             unselectedLabelStyle: const TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.bold,
-            ),
+               ),
             unselectedLabelColor: Colors.grey,
             labelStyle: GoogleFonts.bebasNeue(
               fontSize: 32,
-            ),
+               ),
             isScrollable: true,
             tabs: [
               Tab(
@@ -125,11 +125,12 @@ class lvcard extends StatelessWidget {
                     style: GoogleFonts.bebasNeue(      
                       fontWeight: FontWeight.bold,
                       color: Colors.black,
-                      fontSize: 28),),
-                ),
+                      fontSize: 28
+               ),
+             ),
+           ),
         ],
-      ),
-      
+      ),     
     );
   }
 }
@@ -173,15 +174,15 @@ class upcard extends StatelessWidget {
                             style: GoogleFonts.bebasNeue(      
                               fontWeight: FontWeight.bold,
                               color: color,
-                              fontSize: 20),),
-                        ],
-                      ),
+                              fontSize: 20
+                    ),
                   ),
-                  ),
-                
+                ],
+              ),
+            ),
+          ),        
         ],
-      ),
-      
+      ), 
     );
   }
 }
@@ -235,13 +236,13 @@ class evecard extends StatelessWidget {
                                   ),
                                 ),
                                 Text(description,style:TextStyle(color: Colors.white,fontWeight:FontWeight.bold))
-                              ]
-                            )
-                          ),
-                        ),
-                      ),
-                   ]
-                )
+                    ]
+                  )
+               ),
+            ),
+          ),
+        ]
+      )
     );
   }
 }

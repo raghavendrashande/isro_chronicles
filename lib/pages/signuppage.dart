@@ -247,7 +247,7 @@ class _registerpageState extends State<registerpage> {
                       )
                     ),
                   ),
-                   SizedBox(height: 6),
+                  SizedBox(height: 6),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -256,7 +256,8 @@ class _registerpageState extends State<registerpage> {
                         color: Colors.grey[350],
                         fontSize: 16,
                         fontWeight: FontWeight.bold
-                      ),),
+                        ),
+                      ),
                       GestureDetector(
                         onTap: widget.ontap,
                         child: Text('Sign in ',
@@ -264,15 +265,15 @@ class _registerpageState extends State<registerpage> {
                             color: Color.fromARGB(255, 34, 146, 245),
                             fontSize: 16,
                             fontWeight: FontWeight.bold
-                          ),),
-                      ),
-                    ],
-                  ),
-                ],
+                       ),
+                     ),
+                   ),
+                 ],
               ),
-            ),
+            ],
           ),
-      
+        ),
+      ),    
     );
   }
 }

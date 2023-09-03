@@ -38,11 +38,11 @@ class _HomepageState extends State<Homepage> {
                   SizedBox(
                     height: 600,
                     child: MyTabBar(tabOptions: taboptions),
-                  )
-              ],
-            ),
+              )
+            ],
           ),
-        )
+        ),
+      )
     );
   }
 }

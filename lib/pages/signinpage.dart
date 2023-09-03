@@ -251,7 +251,8 @@ class _LoginpageState extends State<Loginpage> {
                         color: Color.fromARGB(255, 34, 146, 245),
                         fontSize: 16,
                         fontWeight: FontWeight.bold
-                      ),),
+                      ),
+                    ),
                   ),
                 ],
               ),

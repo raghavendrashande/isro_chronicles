@@ -39,20 +39,54 @@ class updescpg extends StatelessWidget {
                          child:Image.asset(upimgsrc[idx]),
                          ),
                       ),
-                      Text(upnames[idx], style: GoogleFonts.bebasNeue(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 70),),
-                      Text('Expected launch dates:'+updates[idx], style: GoogleFonts.roboto(color: Colors.white,fontWeight: FontWeight.bold,fontSize:18)),
-                      Text('Spacecraft: '+upsc[idx], style: GoogleFonts.roboto(color: Colors.white,fontWeight: FontWeight.bold,fontSize:18)),
+                      Text(
+                        upnames[idx], 
+                        style: GoogleFonts.bebasNeue(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 70
+                          ),
+                        ),
+                      Text(
+                        'Expected launch dates:'+updates[idx], 
+                        style: GoogleFonts.roboto(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize:18
+                          ),
+                        ),
+                      Text(
+                        'Spacecraft: '+upsc[idx], 
+                        style: GoogleFonts.roboto(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize:18
+                          ),
+                        ),
                       SizedBox(height: 18),
-                      Text('Description:', style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 24),),
+                      Text(
+                        'Description:', 
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24
+                          ),
+                        ),
                       Padding(
                         padding: const EdgeInsets.all(18),
-                        child: Text(updesc[idx],style: TextStyle(color: Colors.white, fontSize: 18,),softWrap: true,),
-                      )
-                    ],
+                        child: Text(
+                          updesc[idx],
+                          style: TextStyle(
+                            color: Colors.white, 
+                            fontSize: 18,
+                    ),softWrap: true,
                   ),
-                ),
-              ),
-      ),
-         );
-       }
+                )
+              ],
+            ),
+          ),
+        ),
+       ),
+    );
+  }
 }

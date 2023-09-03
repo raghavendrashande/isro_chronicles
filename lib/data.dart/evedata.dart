@@ -40,7 +40,7 @@ class eves extends StatelessWidget {
                                }
                             }, 
                       child: evecard(name: 'Exploring the Cosmos', date: 'Thu, 12 - Sat, 14 Oct', venue: 'Bengaluru',description: 'The Indian Space Research Organisation (ISRO) is gearing up to host a three-day workshop on Space Situational Awareness & Space Traffic Management (SSA & STM). This informative event is tailored for Indian students, researchers, and faculty members and is scheduled to take place from October 12 to 14, 2023, at ISRO Headquarters in Bengaluru.',))
-                  ],
+            ],
           )
         )
       )

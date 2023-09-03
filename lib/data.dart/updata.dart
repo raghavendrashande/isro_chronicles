@@ -29,18 +29,18 @@ class updata extends StatelessWidget {
                     onTap: (){
               Navigator.push(context,
               MaterialPageRoute(builder: (context) => updescpg(idx: index),));
-            },
+           },
                     child: upcard(
                       imagePath: upimgsrc[index], 
                       name:upnames[index],
                       idx: index,
                       color:Color.fromARGB(255,0,0,0)
-                      ));
-                },
-              ),
+                ),
+              );
+            },
+          ),
         ),
-      ),
-      
+      ),  
     );
   }
 }
