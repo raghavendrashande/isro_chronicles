@@ -48,6 +48,15 @@ List allveh=[
   ['images/launch vehicles/slv3.jpg','SLV 3'],
   ['images/launch vehicles/sslv.jpg','SSLV'],
 ];
+List moreinfo = [
+  'https://www.isro.gov.in/ASLV.html',
+  'https://www.isro.gov.in/GSLV_CON.html',
+  'https://www.isro.gov.in/Gaganyaan.html'
+  'https://www.isro.gov.in/GSLVmk3_CON.html',
+  'https://www.isro.gov.in/PSLV_CON.html',
+  'https://www.isro.gov.in/SLV.html',
+  'https://www.isro.gov.in/sslv_CON.html'
+];
 List descriptions = [
   'The Augmented Satellite Launch Vehicle (ASLV) Programme was designed to augment the payload capacity to 150 kg, thrice that of SLV-3, for Low Earth Orbits (LEO). While building upon the experience gained from the SLV-3 missions, ASLV proved to be a low cost intermediate vehicle to demonstrate and validate critical technologies, that would be needed for the future launch vehicles like strap-on technology, inertial navigation, bulbous heat shield, vertical integration and closed loop guidance.\nUnder the ASLV programme four developmental flights were conducted. The first developmental flight took place on March 24, 1987 and the second on July 13, 1988. The third developmental flight, ASLV-D3 was successfully launched on May 20, 1992, when SROSS-C (106 kg) was put into an orbit of 255 x 430 km. ASLV-D4, launched on May 4, 1994, orbited SROSS-C2 weighing 106 kg. It had two payloads, Gamma Ray Burst (GRB) Experiment and Retarding Potentio Analyser (RPA) and functioned for seven years.',
   'Geosynchronous Satellite Launch Vehicle Mark II (GSLV Mk II) is the launch vehicle developed by India, to launch communication satellites in geo transfer orbit using cryogenic third stage. Initially Russian GK supplied cryogenic stages were used. Later cryogenic stage was indigenously developed and inducted in Jan 2014 from GSLV D5 onwards. This operational fourth generation launch vehicle is a three stage vehicle with four liquid strap-ons. The flight proven indigenously developed Cryogenic Upper Stage (CUS), forms the third stage of GSLV Mk II. From January 2014, the vehicle has achieved six consecutive successes',
