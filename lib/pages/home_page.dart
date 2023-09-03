@@ -11,7 +11,6 @@ class Homepage extends StatefulWidget {
 
 class _HomepageState extends State<Homepage> {
 
-  void searchbuttontapped(){}
 
   List taboptions = [
     ['Launch vehicles',launchtab()],
@@ -34,7 +33,6 @@ class _HomepageState extends State<Homepage> {
             child: ListView(
               children: [
                 MyAppBar(
-                  onSearchTap: searchbuttontapped, 
                   title: 'Explore'
                   ),
                   SizedBox(

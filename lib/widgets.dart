@@ -4,11 +4,9 @@ import 'package:isro_chronicle/data.dart/updata.dart';
 
 class MyAppBar extends StatelessWidget {
   final String title;
-  final VoidCallback onSearchTap;
 
   MyAppBar({
     Key? key,
-    required this.onSearchTap,
     required this.title,
   }) : super(key: key);
 
@@ -25,22 +23,6 @@ class MyAppBar extends StatelessWidget {
                 style: GoogleFonts.bebasNeue(
                   fontSize: 52,
                   color: Color.fromARGB(245, 255, 255, 255)
-                ),
-              ),
-            ),
-            GestureDetector(
-              onTap: onSearchTap,
-              child: Container(
-                padding: EdgeInsets.all(12),
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white),
-                  borderRadius: BorderRadius.circular(16),
-                  color: Color.fromARGB(0, 66, 66, 66),
-                ),
-                child: Icon(
-                  Icons.search,
-                  size: 36,
-                  color: Colors.white,
                 ),
               ),
             ),
