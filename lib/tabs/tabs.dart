@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:isro_chronicle/data.dart/evedata.dart';
 import 'package:isro_chronicle/data.dart/lvdata.dart';
 import 'package:isro_chronicle/data.dart/satellitesapicall.dart';
 import 'package:isro_chronicle/data.dart/updata.dart';
@@ -42,7 +43,7 @@ class eventtab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text('data');
+    return eves();
   }
 }
 

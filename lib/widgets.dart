@@ -203,3 +203,63 @@ class upcard extends StatelessWidget {
     );
   }
 }
+
+
+class evecard extends StatelessWidget {
+  final String name;
+  final String date;
+  final String venue;
+  final String description;
+  const evecard({
+    Key? key,
+    required this.name,
+    required this.date,
+    required this.venue,
+    required this.description
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 10),
+      child: Stack(
+        children: [
+          ClipRRect(
+              borderRadius: BorderRadius.circular(12),
+              child:Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                           Icon(Icons.rocket_launch_sharp,color: Colors.white,size: 85),
+                          Text(
+                            name,
+                            style: GoogleFonts.bebasNeue(      
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                              fontSize: 30),),
+                              Card(
+                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                                color: Color.fromARGB(97, 226, 124, 244),
+                                child:Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Icon(Icons.calendar_month,color: Colors.white,),
+                                      Text(date,style:TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+                                      Icon(Icons.location_pin,color: Colors.white),
+                                      Text(venue,style:TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+                                    ]
+                                  ),
+                                ),
+                                Text(description,style:TextStyle(color: Colors.white,fontWeight:FontWeight.bold))
+                              ]
+                            )
+                          ),
+                        ),
+                      ),
+                   ]
+                )
+    );
+  }
+}

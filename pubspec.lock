@@ -57,14 +57,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.3"
-  ellipsis_overflow_text:
-    dependency: "direct main"
-    description:
-      name: ellipsis_overflow_text
-      sha256: "232dcb1ecebb3f4905d49ee6366c567c6d20c9d97b4c7eecc647ed3cc45e5fef"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.1+1"
   fake_async:
     dependency: transitive
     description:

@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'package:ellipsis_overflow_text/ellipsis_overflow_text.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:url_launcher/url_launcher.dart';
@@ -85,7 +84,7 @@ class satsdata extends StatelessWidget {
 
                                   Text('Launch date: '+allsats[index].launchdate,style: TextStyle(color: Colors.white),overflow: TextOverflow.fade),
                                   Text('Launch type '+allsats[index].launchtype,style: TextStyle(color: Colors.white),overflow: TextOverflow.fade),
-                                  Text('Payload: '+allsats[index].payload,style: TextStyle(color: Colors.white),overflow: TextOverflow.fade),
+                                  SizedBox(width:240, child: Center(child: Text('Payload: '+allsats[index].payload,maxLines: 1,softWrap: false,style: TextStyle(color: Colors.white),overflow: TextOverflow.fade))),
                                   Text('Result: '+allsats[index].missionstatus,style: TextStyle(color: Colors.white),overflow: TextOverflow.fade),
                                     ],
                                   ),  
