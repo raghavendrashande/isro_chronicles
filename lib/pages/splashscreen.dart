@@ -25,7 +25,8 @@ class _SplashScreenState extends State<SplashScreen> {
         decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage('images/ISRO.gif'),
-              fit: BoxFit.cover)
+              fit: BoxFit.cover
+          )
         ),
       )
     ); 
