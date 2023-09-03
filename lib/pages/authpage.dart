@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:isro_chronicle/pages/loginorregisterpage.dart';
-import 'package:isro_chronicle/pages/home_page.dart';
+import 'package:isro_chronicle/pages/splashscreen.dart';
 
 class authpage extends StatelessWidget {
   const authpage({super.key});
@@ -13,7 +13,7 @@ class authpage extends StatelessWidget {
         stream: FirebaseAuth.instance.authStateChanges(),
         builder: (context, snapshot) {
           if(snapshot.hasData){
-            return const Homepage();
+            return SplashScreen();
           }
           else {
             return loginorregister();

@@ -56,7 +56,7 @@ class satsdata extends StatelessWidget {
                             }, 
                     child: Card(
                       margin: EdgeInsets.all(5),
-                          color: Color.fromARGB(61, 112, 47, 123),
+                          color: Color.fromARGB(60, 49, 48, 49),
                           shadowColor: const Color.fromARGB(156, 189, 189, 189),
                           elevation: 5,
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),

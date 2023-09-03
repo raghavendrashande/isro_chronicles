@@ -26,6 +26,7 @@ flutter:
   assets:
     - images/glogo.png
     - images/bg.jpg
+    - images/ISRO.gif
     - images/launch vehicles/aslv.jpg    
     - images/launch vehicles/gslv.jpg
     - images/launch vehicles/hrlv.jpg

@@ -241,7 +241,7 @@ class evecard extends StatelessWidget {
                               fontSize: 30),),
                               Card(
                                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                                color: Color.fromARGB(97, 226, 124, 244),
+                                color: Color.fromARGB(95, 254, 253, 253),
                                 child:Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
