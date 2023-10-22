@@ -1,0 +1,28 @@
+name: portfolioweb
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^6.1.0
+  simple_gradient_text: ^1.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - 'assets/dash.png'
+    - 'assets/mypic.png'
+    - 'assets/socialmediaicons/email.png'
+    - 'assets/socialmediaicons/github.png'
+    - 'assets/socialmediaicons/instagram.png'
+    - 'assets/socialmediaicons/linkedin.png'
