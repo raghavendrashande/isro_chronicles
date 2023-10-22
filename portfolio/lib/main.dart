@@ -15,12 +15,12 @@ class MainApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        scaffoldBackgroundColor: Color.fromARGB(255, 24, 24, 24),
+        scaffoldBackgroundColor:const Color.fromARGB(255, 24, 24, 24),
         useMaterial3: true,
         textTheme: GoogleFonts.openSansTextTheme(Theme.of(context).textTheme)
             .apply(bodyColor: Colors.white,)
       ),
-      home: homepage()
+      home:const homepage()
     );
   }
 }
